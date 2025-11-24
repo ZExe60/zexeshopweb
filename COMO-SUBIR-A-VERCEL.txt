@@ -1,0 +1,110 @@
+═══════════════════════════════════════════════════════════
+   CÓMO SUBIR TU WEB A VERCEL - GUÍA PASO A PASO
+═══════════════════════════════════════════════════════════
+
+📝 OPCIÓN 1: SUBIR DIRECTAMENTE (LA MÁS FÁCIL)
+────────────────────────────────────────────────────────────
+1. Ve a https://vercel.com
+2. Crea una cuenta o inicia sesión
+3. Haz clic en "Add New" → "Project"
+4. Haz clic en "Browse" o arrastra toda tu carpeta Z.EXE-WEB
+5. Vercel detectará automáticamente que es una web estática
+6. Haz clic en "Deploy"
+7. ¡Listo! Tu web estará en línea
+
+═══════════════════════════════════════════════════════════
+
+📁 OPCIÓN 2: USANDO VERCEL CLI (TERMINAL)
+────────────────────────────────────────────────────────────
+1. Instala Vercel CLI globalmente:
+   npm install -g vercel
+
+2. Navega a tu carpeta del proyecto:
+   cd C:\Users\Alain\Desktop\Z.EXE-WEB
+
+3. Ejecuta el comando de deploy:
+   vercel
+
+4. La primera vez te pedirá:
+   - Login (sigue las instrucciones)
+   - Set up and deploy? → YES
+   - Which scope? → Tu cuenta
+   - Link to existing project? → NO
+   - Project name → z-exe-portfolio (o el que quieras)
+   - In which directory is your code? → ./ (enter)
+   - Want to override settings? → NO
+
+5. ¡Vercel desplegará tu web automáticamente!
+
+═══════════════════════════════════════════════════════════
+
+🔧 ARCHIVO DE CONFIGURACIÓN (OPCIONAL)
+────────────────────────────────────────────────────────────
+Si quieres más control, crea un archivo llamado "vercel.json" 
+en la raíz de tu proyecto con este contenido:
+
+{
+  "buildCommand": null,
+  "outputDirectory": ".",
+  "framework": null
+}
+
+═══════════════════════════════════════════════════════════
+
+📋 ESTRUCTURA DE ARCHIVOS QUE DEBES SUBIR:
+────────────────────────────────────────────────────────────
+Z.EXE-WEB/
+├── index.html          ✅ NECESARIO
+├── styles.css          ✅ NECESARIO
+├── script.js           ✅ NECESARIO
+├── images/             ✅ NECESARIO (si tienes imágenes)
+│   ├── moon-project.jpg
+│   └── boosthost.jpg
+└── vercel.json         ⚠️ OPCIONAL
+
+═══════════════════════════════════════════════════════════
+
+⚠️ ERRORES COMUNES Y SOLUCIONES:
+────────────────────────────────────────────────────────────
+❌ Error: "This Serverless Function has crashed"
+✅ Solución: No necesitas funciones serverless. Asegúrate de 
+   que NO tengas carpeta "api/" ni archivos .js en una carpeta
+   "api/". Tu web es estática (solo HTML/CSS/JS).
+
+❌ Error: "404 - NOT FOUND"
+✅ Solución: Asegúrate de que tu archivo principal se llame
+   "index.html" (no Index.html ni INDEX.html)
+
+❌ Error: Las imágenes no se ven
+✅ Solución: Verifica que la carpeta "images/" esté incluida
+   y que las rutas en el HTML sean correctas
+
+═══════════════════════════════════════════════════════════
+
+🎯 DESPUÉS DE DESPLEGAR:
+────────────────────────────────────────────────────────────
+• Vercel te dará una URL tipo: https://z-exe-portfolio.vercel.app
+• Puedes cambiar el nombre del proyecto en la configuración
+• Puedes añadir un dominio personalizado gratis
+• Cada vez que hagas cambios, sube de nuevo con "vercel --prod"
+
+═══════════════════════════════════════════════════════════
+
+💡 CONSEJOS:
+────────────────────────────────────────────────────────────
+✓ Usa la Opción 1 si es tu primera vez (más fácil)
+✓ No necesitas servidor Node.js ni nada extra
+✓ Tu web es 100% estática (HTML/CSS/JS)
+✓ Los cambios se aplican en segundos
+✓ Vercel es GRATIS para proyectos personales
+
+═══════════════════════════════════════════════════════════
+
+🚀 COMANDO RÁPIDO PARA ACTUALIZACIONES:
+────────────────────────────────────────────────────────────
+Después del primer deploy, solo necesitas:
+
+cd C:\Users\Alain\Desktop\Z.EXE-WEB
+vercel --prod
+
+═══════════════════════════════════════════════════════════

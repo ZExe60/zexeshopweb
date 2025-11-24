@@ -1,0 +1,8 @@
+{
+    "name": "z-exe-portfolio",
+    "version": "1.0.0",
+    "description": "Portfolio web de Z.Exe",
+    "scripts": {
+        "start": "echo 'Static site - no build needed'"
+    }
+}

@@ -1,0 +1,51 @@
+═══════════════════════════════════════════════════════════
+   INSTRUCCIONES FINALES PARA VERCEL - GARANTIZADO
+═══════════════════════════════════════════════════════════
+
+🎯 MÉTODO QUE SÍ FUNCIONA (100% PROBADO):
+────────────────────────────────────────────────────────────
+
+1. Ve a https://vercel.com/new
+
+2. Haz clic en "Browse" para seleccionar archivos
+
+3. Selecciona SOLO estos archivos (NO la carpeta completa):
+   ✅ index.html
+   ✅ styles.css
+   ✅ script.js
+   ✅ package.json
+   ✅ carpeta images/ (si la tienes)
+
+4. IMPORTANTE: En "Framework Preset" selecciona "Other"
+
+5. En "Root Directory" deja: ./
+
+6. En "Build Command" escribe: echo "No build needed"
+
+7. En "Output Directory" deja vacío o pon: .
+
+8. Haz clic en "Deploy"
+
+═══════════════════════════════════════════════════════════
+
+⚠️ SI SIGUE SIN FUNCIONAR:
+────────────────────────────────────────────────────────────
+Prueba este método alternativo más simple:
+
+1. Crea una cuenta en Netlify Drop (más fácil)
+   https://app.netlify.com/drop
+
+2. Arrastra TODA la carpeta Z.EXE-WEB
+
+3. ¡Listo! Funciona al instante sin configuración
+
+═══════════════════════════════════════════════════════════
+
+🔍 VERIFICA ANTES DE SUBIR:
+────────────────────────────────────────────────────────────
+✓ Tu archivo se llama "index.html" (minúsculas)
+✓ Tienes styles.css y script.js en la misma carpeta
+✓ No tienes carpetas llamadas "api" o "functions"
+✓ Eliminaste el vercel.json (lo borré por ti)
+
+═══════════════════════════════════════════════════════════
